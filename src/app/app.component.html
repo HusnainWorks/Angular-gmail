@@ -1,0 +1,11 @@
+<div class="app" [ngClass]="isDarkTheme ? 'dark-theme' : 'light-theme'">
+  <app-header></app-header>
+  <div class="app-body" fxLayout="row">
+    <div class="side-bar" fxFlex="19.5">
+      <app-sidebar></app-sidebar>
+    </div>
+    <div class="email-list" fxFlex>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

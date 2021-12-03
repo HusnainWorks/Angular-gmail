@@ -1,0 +1,34 @@
+<div class="header" fxLayoutAlign="start center" fxLayoutGap="80px">
+  <div class="header_left" fxLayoutAlign="center center">
+    <button mat-icon-button>
+      <mat-icon>menu</mat-icon>
+    </button>
+    <img
+      src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_2x_r2.png"
+      alt=""
+    />
+  </div>
+  <div class="header_middle" fxLayoutAlign="center center" fxFlex="70">
+    <button (click)="msgToEmail()" mat-icon-button>
+      <mat-icon>search</mat-icon>
+    </button>
+
+    <input [(ngModel)]="message" placeholder="Search mail" type="text" />
+
+    <mat-icon>tune</mat-icon>
+  </div>
+  <div class="header_right" fxLayoutAlign="center">
+    <button mat-icon-button>
+      <mat-icon>help_outline</mat-icon>
+    </button>
+    <button mat-icon-button>
+      <mat-icon>settings</mat-icon>
+    </button>
+    <button mat-icon-button>
+      <mat-icon>apps</mat-icon>
+    </button>
+    <button mat-icon-button>
+      <mat-icon>account_circle</mat-icon>
+    </button>
+  </div>
+</div>

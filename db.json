@@ -1,0 +1,36 @@
+{
+  "mail": [
+    {
+      "id": 1,
+      "title": "Pitter",
+      "email": "pitter@gmail.com",
+      "subject": "For New Offer",
+      "description": "Dear Pitter, The task you assigned to me task title [task description] was completed on [date].[Include here any further information your boss would find useful such as issues, next actions, timescales, or dependencies.Please let me know if you have any questions or would like further information, otherwise, no response is needed.Thanks,[Your name]",
+      "time": "12:32"
+    },
+    {
+      "id": 5,
+      "title": "fiverr",
+      "email": "john@gmail.com",
+      "subject": "Email to Mr",
+      "description": "Hello John, The task you assigned to me [task title] [task description] was completed on date.Include here any \nfurther information your boss would find useful such as issues, next actions, timescales, or dependencies.]Please let me know if you have any questions or would like further information, otherwise, no response is needed.Thanks,[Your name]",
+      "time": "11:45"
+    },
+    {
+      "id": 6,
+      "title": "fiverr",
+      "email": "john@gmail.com",
+      "subject": "Email to Mr",
+      "description": "Hello John, The task you assigned to me [task title] [task description] was completed on date.Include here any \nfurther information your boss would find useful such as issues, next actions, timescales, or dependencies.]Please let me know if you have any questions or would like further information, otherwise, no response is needed.Thanks,[Your name]",
+      "time": "11:45"
+    },
+    {
+      "id": 7,
+      "title": "fiverr",
+      "email": "john@gmail.com",
+      "subject": "Email to Mr",
+      "description": "Hello John, The task you assigned to me [task title] [task description] was completed on date.Include here any \nfurther information your boss would find useful such as issues, next actions, timescales, or dependencies.]Please let me know if you have any questions or would like further information, otherwise, no response is needed.Thanks,[Your name]",
+      "time": "11:45"
+    }
+  ]
+}

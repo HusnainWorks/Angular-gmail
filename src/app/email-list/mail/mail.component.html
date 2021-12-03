@@ -1,0 +1,74 @@
+<div class="email-list">
+  <div class="email_top" fxLayout="row">
+    <div class="left" fxLayoutGap="8px" fxLayoutAlign="start center" fxFlex>
+      <button mat-icon-button routerLink="/">
+        <mat-icon>arrow_back</mat-icon>
+      </button>
+      <mat-divider [vertical]="true"></mat-divider>
+      <button mat-icon-button>
+        <mat-icon>archive</mat-icon>
+      </button>
+      <button mat-icon-button>
+        <mat-icon>report</mat-icon>
+      </button>
+      <button mat-icon-button>
+        <mat-icon>delete</mat-icon>
+      </button>
+      <mat-divider vertical style="height: 20px"></mat-divider>
+      <button mat-icon-button>
+        <mat-icon>mark_as_unread</mat-icon>
+      </button>
+      <button mat-icon-button>
+        <mat-icon>access_time_filled</mat-icon>
+      </button>
+      <button mat-icon-button>
+        <mat-icon>playlist_add_check_circle</mat-icon>
+      </button>
+      <mat-divider vertical style="height: 20px"></mat-divider>
+      <button mat-icon-button>
+        <mat-icon>drive_file_move</mat-icon>
+      </button>
+      <button mat-icon-button>
+        <mat-icon>label</mat-icon>
+      </button>
+      <button mat-icon-button>
+        <mat-icon>more_vert</mat-icon>
+      </button>
+    </div>
+    <div class="right" fxLayoutAlign="end center">
+      <mat-paginator
+        [length]="100"
+        [pageSize]="10"
+        [pageSizeOptions]="[5, 10, 25, 100]"
+        [hidePageSize]="true"
+        aria-label="Select page"
+      >
+      </mat-paginator>
+    </div>
+  </div>
+  <div class="mail">
+    <div class="mail_top">
+      <div class="emailtop" fxLayout="row">
+        <div class="left" fxLayoutGap="8px" fxLayoutAlign="start center" fxFlex>
+          <div class="txt">{{ EmailList.title }}</div>
+        </div>
+        <div class="right" fxLayoutAlign="end center">
+          <div class="txt">{{ EmailList.time }}</div>
+          <mat-divider [vertical]="true"></mat-divider>
+          <button mat-icon-button>
+            <mat-icon>star_outline</mat-icon>
+          </button>
+          <button mat-icon-button>
+            <mat-icon>reply</mat-icon>
+          </button>
+          <button mat-icon-button>
+            <mat-icon>more_vert</mat-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="email_top">
+      <div class="txt">{{ EmailList.description }}</div>
+    </div>
+  </div>
+</div>

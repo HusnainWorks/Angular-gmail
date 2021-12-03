@@ -1,0 +1,16 @@
+<div class="sidebar">
+  <button mat-button class="sidebar__compose">
+    <mat-icon>add</mat-icon>
+    Compose
+  </button>
+  <app-sidebaroption *ngFor="let option of sideBarOption" [option]="option">
+  </app-sidebaroption>
+
+  <div class="sidebar__footer" fxLayoutAlign="center">
+    <div class="sidebar__footerIcons">
+      <mat-icon>person</mat-icon>
+      <mat-icon>duoicon</mat-icon>
+      <mat-icon>phone</mat-icon>
+    </div>
+  </div>
+</div>

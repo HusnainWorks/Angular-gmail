@@ -1,0 +1,39 @@
+.header {
+  padding: 10px;
+  color: grey;
+  border-bottom: 1px solid whitesmoke;
+}
+
+.header_left {
+  align-items: center;
+}
+
+.header_left > img {
+  object-fit: contain;
+  width: 109px;
+  height: 40px;
+  padding: 5px;
+}
+
+.header_middle {
+  background-color: whitesmoke;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.header .header_middle > .mat-icon {
+  color: grey;
+}
+
+.header_left > .mat-icon {
+  color: grey;
+}
+
+.header_middle > input {
+  border: none;
+  width: 100%;
+  padding: 10px;
+  outline-width: 0;
+  font-size: medium;
+  background-color: transparent;
+}

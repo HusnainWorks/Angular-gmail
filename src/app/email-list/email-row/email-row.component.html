@@ -1,0 +1,30 @@
+<div
+  routerLink="/mail/{{ email.id }}"
+  class="email_top"
+  fxLayout="row"
+  fxLayoutAlign="start center"
+>
+  <div class="left" fxFlex="20%">
+    <mat-checkbox></mat-checkbox>
+    <button mat-icon-button>
+      <mat-icon>star_outline</mat-icon>
+    </button>
+    {{ email.title }}
+  </div>
+  <div class="mid" fxFlex="60%">
+    {{ email.description }}
+  </div>
+  <div class="right" fxLayout="row" fxLayoutAlign="end center" fxFlex="15%">
+    <div class="extra">
+      <div fxLayout="row">
+        <button mat-icon-button>
+          <mat-icon>archive</mat-icon>
+        </button>
+        <button (click)="deleteMail(email.id)" routerLink="/" mat-icon-button>
+          <mat-icon>delete</mat-icon>
+        </button>
+      </div>
+    </div>
+    <div class="extra_show">{{ email.time }}</div>
+  </div>
+</div>
