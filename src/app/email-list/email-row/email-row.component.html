@@ -4,7 +4,7 @@
   fxLayout="row"
   fxLayoutAlign="start center"
 >
-  <div class="left" fxFlex="20%">
+  <div class="left" fxFlex="20%" fxHide.xs>
     <mat-checkbox></mat-checkbox>
     <button mat-icon-button>
       <mat-icon>star_outline</mat-icon>
@@ -14,7 +14,13 @@
   <div class="mid" fxFlex="60%">
     {{ email.description }}
   </div>
-  <div class="right" fxLayout="row" fxLayoutAlign="end center" fxFlex="15%">
+  <div
+    class="right"
+    fxLayout="row"
+    fxLayoutAlign="end center"
+    fxFlex="15%"
+    fxFlex.xl="10%"
+  >
     <div class="extra">
       <div fxLayout="row">
         <button mat-icon-button>

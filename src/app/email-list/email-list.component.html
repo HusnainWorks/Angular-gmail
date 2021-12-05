@@ -11,6 +11,7 @@
     </div>
     <div class="right" fxLayoutAlign="center center">
       <mat-paginator
+        fxHide.xs
         [length]="EmailList.length"
         pageSize="10"
         (page)="getPaginatorData($event)"

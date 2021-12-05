@@ -1,5 +1,13 @@
-<div class="header" fxLayoutAlign="start center" fxLayoutGap="80px">
-  <div class="header_left" fxLayoutAlign="center center">
+<div class="header" fxLayout="row" fxLayoutGap="80px">
+  <div
+    class="header_left"
+    fxLayoutAlign="start center"
+    fxFlex.xl="10%"
+    fxFlex.lg="15%"
+    fxFlex.md="20%"
+    fxFlex.sm="25%"
+    fxFlex.xs="25%"
+  >
     <button mat-icon-button>
       <mat-icon>menu</mat-icon>
     </button>
@@ -8,16 +16,37 @@
       alt=""
     />
   </div>
-  <div class="header_middle" fxLayoutAlign="center center" fxFlex="70">
-    <button (click)="msgToEmail()" mat-icon-button>
-      <mat-icon>search</mat-icon>
-    </button>
+  <div
+    fxFlex.xl="75%"
+    fxFlex.md="65%"
+    fxFlex.lg="55%"
+    fxFlex.sm="45%"
+    fxFlex.xs="35%"
+  >
+    <div
+      class="header_middle"
+      fxLayoutAlign="center center"
+      fxFlex.xl="45%"
+      fxFlex.sm="100%"
+      fxHide.xs
+    >
+      <button (click)="msgToEmail()" mat-icon-button>
+        <mat-icon>search</mat-icon>
+      </button>
 
-    <input [(ngModel)]="message" placeholder="Search mail" type="text" />
+      <input [(ngModel)]="message" placeholder="Search mail" type="text" />
 
-    <mat-icon>tune</mat-icon>
+      <mat-icon>tune</mat-icon>
+    </div>
   </div>
-  <div class="header_right" fxLayoutAlign="center">
+  <div
+    class="header_right"
+    fxFlex.xl="15%"
+    fxFlex.md="20%"
+    fxFlex.lg="25%"
+    fxFlex.sm="30%"
+    fxLayoutAlign="end center"
+  >
     <button mat-icon-button>
       <mat-icon>help_outline</mat-icon>
     </button>
